@@ -70,6 +70,10 @@ const { name, contact, age, address } = personal
 
 const { present : {street : myStreet} } = address
 
+
+const {bank:{primary:{transactions}}}=accounts
+const amount = transactions.map(({amount})=>amount)
+
 // console.log(myStreet); // Output: 221B Baker Street
 
 // Destructuring in TypeScript from arrays with nested elements

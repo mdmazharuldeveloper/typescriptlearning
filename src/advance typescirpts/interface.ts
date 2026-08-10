@@ -35,3 +35,16 @@ const employee: Iemployee = {
 }
 
 console.log(employee); // Output: { name: 'Jane Smith', age: 28, role: 'user' }
+
+
+type Add =(num1:number,num2:number) => number;
+interface Iadd {
+    (num1:number,num2:number):number;
+}
+
+const add:Iadd =(num1, num2)=>{
+    return num1 + num2;
+}
+
+
+console.log(add(1,2))
